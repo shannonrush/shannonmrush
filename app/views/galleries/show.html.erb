@@ -166,8 +166,7 @@
 		</div>
 	</div>
 	<div class="right_box">
-		<div class="photo_container" style="width: <%= @photo.width %>px; margin: auto; height: 375px;"><%= image_tag(@photo.public_filename, :class => "photo" )%></div>
-		
+		<div class="photo_container" style="width: <%= @photo.width %>px; margin: auto; height: 375px;"><%= image_tag(@photo.public_filename, :class => "photo", :alt => "")%></div>
 		<div class="photo_controls">
 			<p class="previous"><%= link_to "<< Previous", {:action => "show", :shoot_id => @shoot.id, :photo_id => Photo.get_previous(@photo)}%></p>
 			<p class="number">Photo #<%= @photo.number %></p>
