@@ -1,0 +1,19 @@
+<div class="admin">
+	<div class="left_box">
+		<%= render :partial => "left_box"%>
+	</div>
+	<div class="right_box">
+		<%= error_messages_for :photo %>
+		<% form_for(:photo, :url => {:controller => "admin", :action => "upload_photos"}, 
+		                      :html => { :multipart => true }) do |f| -%>
+			<%= f.select :shoot_id, Shoot.all.collect{|s| [ "#{s.gallery.name} - #{s.name}", s.id ] }, {:prompt => 'Select Shoot'}%><br/>
+			<% 10.times do %>
+				Select Photo: <%= file_field_tag "uploaded_data[]" %><br/>
+			<% end %>
+		    <%= submit_tag 'Add Photos' %>
+		<% end -%>
+	</div>
+</div>
+
+
+

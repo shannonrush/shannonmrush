@@ -1,0 +1,13 @@
+<div class="admin">
+	<div class="left_box">
+		<%= render :partial => "left_box"%>
+	</div>
+	<div class="right_box">
+		<% form_for(:shoot, :url => {:action => "create_shoot"}) do |f| %>
+			<%= f.select :gallery_id, Gallery.all.collect{|g| [ g.name, g.id ] }, {:prompt => 'Select Gallery'}%><br/>
+			Shoot Name: <%= f.text_field :name%><br/>
+			Shoot Date: <%= f.date_select :date %><br/>
+			<%= f.submit "Create Shoot"%>
+		<% end %>
+	</div>
+</div>

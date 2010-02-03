@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #FFFFFF;
+	color: #747679;
+	background-image:url('/images/main_bg.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 30px;
+}
+a {
+	color: #4d4e53;
+	border-bottom: 2px dotted #4d4e53;
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+.main_logo {
+	position: absolute; top: 68px; right: 252px;
+}
+.main_logo img {
+	border: none;
+}
+.main_logo a {
+	border: none;
+}
+.navbar a {
+	text-decoration:none;
+	color: #9F9F9F;
+	border-bottom: none;
+}
+.navbar a:hover {
+	color: #666666;
+	border-bottom: none;
+}
+.navbar {
+	height: 30px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	position: relative; top: 135px;
+	text-align: center;
+}
+.navitem {
+	margin-right: 140px;
+}
+#main_content {
+	position: relative; top: 135px;
+	width: 800px;
+	margin: auto;
+}
+.index_slideshow {
+	position: relative; left: 68px; top: 30px;
+}
+
+.info {
+	margin-bottom: 10px;
+}
+.left_box {
+	background-image:url('/images/opaque_bg.png');
+	width: 210px;
+	border: 1px solid #666666;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	float: left;
+	margin-left: 20px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #4d4e53;
+	text-align: left;
+	font-size: 0.8em;
+	line-height: 25px;
+}
+.left_box .header {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+.left_box a {
+	color: #4d4e53;
+	text-decoration: none;
+	border: none;
+}
+.left_box a:hover {
+	border-bottom: 1px dotted #4d4e53;
+}
+.left_bar {
+	float: left;
+}
+.left_bar .left_box {
+	float: none;
+}
+.right_box {
+	float: left;
+	margin-left: 20px;
+	width: 485px;
+	font-size: 0.9em;
+}
+.right_box ul {
+	margin-left: 100px;
+	line-height: 20px;
+}
+.right_box li {
+	margin-bottom: 5px;
+}
+ul.secondary {
+	margin-left: 40px;
+	font-size: 0.9em;
+	width: 300px;
+	text-align: left;
+}
+ul.secondary li {
+	margin-bottom:0;
+	margin-top:0;
+}
+.header {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.single_spaced {
+	line-height: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.testimonial {
+	font-style: italic;
+}
+.selected {
+	font-weight: bold;
+}
+/* portraits */
+.portraits {
+	width: 800px;
+	margin: auto;
+	margin-top: 20px;
+	line-height: 25px;
+	text-align: justify;
+}
+/* about */
+.about {
+	margin-top :20px;
+	line-height: 25px;
+	text-align: justify;
+}
+.self {
+	float: left;
+	margin-left: 20px;
+}
+/* contact */
+.contact {
+	width: 400px;
+	margin: auto;
+	margin-top: 10px;
+	background-image:url('/images/opaque_bg.png');
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border: 1px solid #666666;
+	padding: 15px;
+	line-height: 25px;
+	font-size: 0.9em;
+}
+.contact_form {
+	margin-left: 30px;
+}
+.contact_form p {
+	font-style: italic;
+	font-size: 0.9em;
+}
+.contact input[type=text] {
+	border: 1px solid #666666;
+	font-size: 1.1em;
+	font-family: Arial, sans-serif;
+}
+.contact textarea {
+	border: 1px solid #666666;
+	font-size: 1.1em;
+	font-family: Arial, sans-serif;
+}
+.contact input[type=submit] {
+	margin-top: 10px;
+	margin-left: 120px;
+}
+/* galleries */
+.galleries {
+	width: 800px;
+	margin: auto;
+	margin-top: 20px;
+}
+.galleries .info {
+	text-align: justify;
+}
+.photo {
+	border: 1px solid #666666;
+}
+.order {
+	margin-top: 20px;
+	margin-left: 20px;
+	color: #666666;
+	font-size: 0.8em;
+}
+.order select {
+	font-family: Arial, sans-serif;
+	height: 10px;
+}
+.item {
+	margin-bottom: 15px;
+}
+.desc {
+	line-height: 14px;
+	margin-bottom: 4px;
+	float: left;
+	width: 150px;
+}
+.price {
+	float: right;
+}
+.quantity {
+	float: left;
+	width: 45px;
+}
+.add_cart {
+	float: left;
+	margin-left: 5px;
+	position: relative; top: -1px;
+}
+.view_cart {
+	margin-left: 200px;
+	margin-top: 10px;
+}
+.photo_controls {
+	width: 375px;
+	margin:auto;
+	margin-top: 8px;
+}
+.control_spacer {
+	height: 125px;
+}
+.photo_controls a {
+	color: #9F9F9F;
+	border-bottom: none;
+}
+.photo_controls a:hover {
+	color: #666666;
+	border-bottom: none;
+}
+.previous {
+	float:left;
+}
+.number {
+	float: left;
+	margin-left: 80px;
+}
+.next {
+	float: right;
+}
+/* admin */
+.admin {
+	width: 800px;
+	margin: auto;
+	margin-top: 20px;
+}

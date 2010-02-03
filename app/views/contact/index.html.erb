@@ -1,0 +1,13 @@
+<div class="contact">
+	<p class="contact_type">Email Me: <%= mail_to "shannon@shannonmrush.com", "shannon@shannonmrush.com"%></p>
+	<p class="contact_type">Call Me: &nbsp;&nbsp;(720) 255-1499</p>
+	<p class="contact_type">Or Send Me A Message Right Here:</p>
+	<div class="contact_form">
+		<% form_tag('contact/contact_form') do %>
+		<p>Name:<br/><%= text_field_tag :name, nil, :size => 30 %></p>
+		<p>Email:<br/><%= text_field_tag :email, nil, :size => 30  %></p>
+		<p>Message:<br/><%= text_area_tag :message, nil, :rows => 7, :cols => 40 %></p>
+		<%= submit_tag "Send Message"%>
+		<% end %>
+	</div>
+</div>

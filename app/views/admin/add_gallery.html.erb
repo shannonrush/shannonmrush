@@ -1,0 +1,12 @@
+<div class="admin">
+	<div class="left_box">
+		<%= render :partial => "left_box"%>
+	</div>
+	<div class="right_box">
+		<% form_for(:gallery, :url => {:action => "create_gallery"}) do |f| %>
+			Gallery Name: <%= f.text_field :name %><br/>
+			Password: <%= f.text_field :password %><br/>
+			<%= submit_tag "Create Gallery"%>
+		<% end %>
+	</div>
+</div>

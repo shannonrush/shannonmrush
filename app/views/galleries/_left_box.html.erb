@@ -1,0 +1,4 @@
+<p class="header">Select a Gallery:</p>
+<% Gallery.all.each do |g| %>
+	<p class="link"><%= link_to g.name, {:action => "show", :id => g.name, :shoot_id => g.shoots.first.id} %></p>
+<% end %>

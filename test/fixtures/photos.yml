@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  shoot_id: 1
+  number: 1
+  file: 
+
+two:
+  shoot_id: 1
+  number: 1
+  file: 

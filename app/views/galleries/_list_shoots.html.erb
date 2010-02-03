@@ -1,0 +1,3 @@
+<% @gallery.shoots.each do |s| %>
+	<p class="link"><%= link_to s.name, {:action => "show", :id => @gallery.id, :shoot_id => s.id}, :class => selected_status(@shoot, s)%></p>
+<% end %>
