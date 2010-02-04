@@ -1,5 +1,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
+	img1 = new Image();
+    img1.src = "<%= @photo.public_filename %>";
       $('#photo_container').fadeIn('slow', function() {
         // Animation complete
       });
