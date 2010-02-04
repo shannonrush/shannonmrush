@@ -1,5 +1,12 @@
+<script type="text/javascript">
+$(document).ready(function() {
+      $('#self').fadeIn('slow', function() {
+        // Animation complete
+      });
+    });
+</script>
 <div class="about">
-	<div class="self"><%= image_tag('self.png')%></div>
+	<div class="self" id="self" style="display:none;"><%= image_tag('self.png')%></div>
 	<div class="right_box">
 		<p class="info">Photography, for me, is more than just "taking pictures."  Photography is 
 		capturing a person in a moment in time - revealing what they look like certainly 
