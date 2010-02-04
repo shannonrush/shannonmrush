@@ -2,7 +2,8 @@ class ContactController < ApplicationController
 
   def contact_form
     ContactMailer.deliver_contact_form(params)
-    render :nothing => true
+    flash[:notice] = "Your Message Has Been Delivered!  Thanks!"
+    render :action => :index
   end
 
 end

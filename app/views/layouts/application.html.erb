@@ -4,11 +4,13 @@
 		<%= stylesheet_link_tag :all %>
 		<%= javascript_include_tag 'jquery-1.3.2.min','application','jquery.cycle.lite.1.0.min.js' %>
 		<title>Shannon M Rush Photography</title>
-
 	</head>
 	<body>
 		<div class="main_logo"><%= link_to image_tag('main_logo.png'), root_path %></div>
 		<div class="navbar"><%= link_to "Portraits", {:controller => "portraits", :action => "index"}, :class => "navitem" %><%#= link_to_remote "Models", :update => "main_content", :url => {:controller => "portfolios", :action => "models"}, :html => {:class=>"navitem"} %><%= link_to "About", {:controller => "about", :action => "index"}, :class=>"navitem" %><%= link_to "Contact", {:controller => "contact", :action => "index"}, :class=>"navitem" %><%= link_to "Galleries", {:controller => "galleries", :action => "index"} %></div>
 		<div id="main_content"><%= yield %></div>
+		<div class="preload">
+			<%= image_tag('portfolio1.png')%>
+		</div>
 	</body>
 </html>
