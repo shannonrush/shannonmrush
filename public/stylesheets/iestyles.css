@@ -1,0 +1,11 @@
+/* galleries */
+.order select {
+	font-family: Arial, sans-serif;
+	height: 40px;
+}
+.desc {
+	position: relative; top: 5px;
+}
+.price {
+	position: relative; top: -14px;
+}
