@@ -12,8 +12,5 @@
 		<div class="main_logo"><%= link_to image_tag('main_logo.png'), root_path %></div>
 		<div class="navbar"><%= link_to "Portraits", {:controller => "portraits", :action => "index"}, :class => "navitem #{selected_status(@controller.controller_name, 'portraits')}" %><%= link_to "Real Estate", {:controller => "real_estate", :action => "index"}, :class => "navitem #{selected_status(@controller.controller_name, 'real_estate')}" %><%#= link_to_remote "Models", :update => "main_content", :url => {:controller => "portfolios", :action => "models"}, :html => {:class=>"navitem"} %><%= link_to "About", {:controller => "about", :action => "index"}, :class=>"navitem #{selected_status(@controller.controller_name, 'about')}" %><%= link_to "Contact", {:controller => "contact", :action => "index"}, :class=>"navitem #{selected_status(@controller.controller_name, 'contact')}" %><%= link_to "Galleries", {:controller => "galleries", :action => "index"}, :class => selected_status(@controller.controller_name, 'galleries') %></div>
 		<div id="main_content"><%= yield %></div>
-		<div class="preload">
-			<%= image_tag('portfolio1.png')%>
-		</div>
 	</body>
 </html>
