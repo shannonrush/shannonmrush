@@ -158,6 +158,7 @@ ul.secondary li {
 .self {
 	float: left;
 	margin-left: 20px;
+	width: 250px;
 }
 /* contact */
 .contact {
