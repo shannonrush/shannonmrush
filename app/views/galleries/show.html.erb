@@ -3,7 +3,7 @@ $(document).ready(function() {
 	img1 = new Image();
     img1.src = "<%= @photo.public_filename %>";
       $(img1).load(function() {
-		$('#photo').fadeIn('slow')
+		$('#photo').fadeIn('fast')
 	  });
     });
 </script>
