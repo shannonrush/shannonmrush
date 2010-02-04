@@ -12,6 +12,9 @@ body {
 	font-size: 12pt;
 	line-height: 30px;
 }
+/* for ie6 */
+img, div { behavior: url('/images/iepngfix.htc') }
+/* general */
 a {
 	color: #4d4e53;
 	border-bottom: 2px dotted #4d4e53;
