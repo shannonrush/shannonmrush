@@ -21,7 +21,7 @@ class AdminController < ApplicationController
   
   def create_gallery
     Gallery.create(params[:gallery])
-    redirect_to :action => :index
+    redirect_to :action => :add_shoot
   end
   
   def create_shoot

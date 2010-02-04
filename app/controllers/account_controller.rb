@@ -16,7 +16,7 @@ class AccountController < ApplicationController
         self.current_user.remember_me
         cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => self.current_user.remember_token_expires_at }
       end
-      redirect_to root_path
+      redirect_to :controller => "admin", :action => "index"
     end
   end
 

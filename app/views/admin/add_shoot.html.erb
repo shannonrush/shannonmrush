@@ -7,6 +7,8 @@
 			<%= f.select :gallery_id, Gallery.all.collect{|g| [ g.name, g.id ] }, {:prompt => 'Select Gallery'}%><br/>
 			Shoot Name: <%= f.text_field :name%><br/>
 			Shoot Date: <%= f.date_select :date %><br/>
+			Real Estate? <%= f.check_box :real_estate %><br/>
+			Zip Name: <%= f.text_field :zip_name %><br/>
 			<%= f.submit "Create Shoot"%>
 		<% end %>
 	</div>

@@ -244,6 +244,19 @@ ul.secondary li {
 	 margin: auto; 
 	 height: 375px;
 }
+.gallery_re {
+	margin-left: 20px;
+}
+.gallery_re a {
+	border: 0;
+	text-decoration: none;
+}
+.gallery_re img {
+	border: none;
+}
+.gallery_re .download {
+	margin-top: 10px;
+}
 .order {
 	margin-top: 20px;
 	margin-left: 20px;
