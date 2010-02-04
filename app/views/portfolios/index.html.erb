@@ -3,11 +3,12 @@ $(document).ready(function() {
 	img1 = new Image();
     img1.src = "/images/portfolio1.png";
 	$(img1).load(function() {
+		$('#index_slideshow').show()
 		$('#index_slideshow').cycle()
 	});
 });
 </script>
-<div id="index_slideshow" class="index_slideshow">
+<div id="index_slideshow" class="index_slideshow" style="display:none;">
 	<%= image_tag('portfolio1.png', :size => "664x334")%>
 	<%= image_tag('portfolio2.png')%>
 	<%= image_tag('portfolio2b.png')%>
