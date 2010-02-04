@@ -1,8 +1,10 @@
 <script type="text/javascript">
 $(document).ready(function() {
-      $('#self').fadeIn('slow', function() {
-        // Animation complete
-      });
+	img1 = new Image();
+    img1.src = "/images/self.png";
+      $(img1).load(function() {
+		$('#self').fadeIn()
+	  });
     });
 </script>
 <div class="about">
