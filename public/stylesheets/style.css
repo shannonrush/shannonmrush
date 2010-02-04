@@ -210,6 +210,10 @@ ul.secondary li {
 .photo {
 	border: 1px solid #666666;
 }
+.photo_container {
+	 margin: auto; 
+	 height: 375px;
+}
 .order {
 	margin-top: 20px;
 	margin-left: 20px;
