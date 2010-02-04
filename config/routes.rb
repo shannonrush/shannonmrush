@@ -19,6 +19,7 @@ ActionController::Routing::Routes.draw do |map|
                                               :senior_package => :get,
                                               :maternity_package => :get,
                                               :professional_package => :get}
+    map.resources :real_estate
     map.resources :about
     map.resources :contact
     map.resources :galleries

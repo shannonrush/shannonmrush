@@ -1,0 +1,36 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#re_slideshow').cycle()
+	});
+</script>
+<div class="real_estate">
+	<div id="re_slideshow" class="re_slideshow">
+		<%= image_tag('re1.png')%>
+		<%= image_tag('re2.png')%>
+		<%= image_tag('re3.png')%>
+		<%= image_tag('re4.png')%>
+		<%= image_tag('re5.png')%>
+		<%= image_tag('re6.png')%>
+	</div>
+	<div class="packages">
+		<p class="header">Real Estate Package - $150<p>
+		<p class="info single_spaced">Make a great first impression for your listing with vivid, attention-drawing photographs!  Listing your property will be that much easier with files optimized for MLS uploading and printing.  Your online gallery will have an easy to remember URL where you can preview your photos and download your finished files.  Your property's gallery will be available to you for the duration of your listing, with no time limit.</p>
+		<p class="info single_spaced"><%= mail_to "shannon@shannonmrush.com","Contact me"%> to schedule your property shoot.</p>
+		<ul>
+			<li>1+ hour shoot</li>
+			<li>Interior, exterior and detail shots</li>
+			<li>Photos optimized for eye-catching listings</li>
+			<li>Files cropped and resized for easy MLS uploading</li>
+			<li>High resolution files for printing
+			<li>One professional 8" x 10" print for your buyer</li> 
+			<li>Online gallery
+				<ul class="secondary">
+					<li>Preview photos</li>
+					<li>Download zip file of photos optimized for MLS</li>
+					<li>Download zip file of photos optimized for printing</li>
+				</ul>
+			</li>
+		</ul>
+		<br/>
+	</div>
+</div>

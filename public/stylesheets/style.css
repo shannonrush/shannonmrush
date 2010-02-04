@@ -12,8 +12,6 @@ body {
 	font-size: 12pt;
 	line-height: 30px;
 }
-/* for ie6 */
-img, div { behavior: url('/images/iepngfix.htc') }
 /* general */
 a {
 	color: #4d4e53;
@@ -53,7 +51,11 @@ a {
 	text-align: center;
 }
 .navitem {
-	margin-right: 140px;
+	margin-right: 100px;
+}
+.navbar .selected {
+	font-weight: normal;
+	color: #333333;
 }
 #main_content {
 	position: relative; top: 135px;
@@ -148,6 +150,33 @@ ul.secondary li {
 	margin-top: 20px;
 	line-height: 25px;
 	text-align: justify;
+}
+/* real estate */
+.real_estate {
+	width: 800px;
+	margin:auto;
+	margin-top: 20px;
+	line-height: 25px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.re_slideshow {
+	width: 752px;
+	margin: auto;
+	postion: relative; top: -260px;
+}
+.real_estate .packages {
+	margin-top: 280px;
+	font-size: 0.9em;
+	margin-left: 25px;
+}
+.real_estate ul {
+	margin-left: 100px;
+	line-height: 20px;
+}
+.real_estate ul.secondary {
+	margin-left: 20px;
+	line-height: 16px;
 }
 /* about */
 .about {
