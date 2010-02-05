@@ -1,7 +1,6 @@
 class Photo < ActiveRecord::Base
   has_attachment :content_type => :image,
-                 :storage => :file_system,
-                 :path_prefix => 'public/system'
+                 :storage => :file_system
                  
 
   validates_as_attachment
