@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$('#index_slideshow').cycle()
+	$('#index_slideshow').cycle().show()
 });
