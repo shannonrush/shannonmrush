@@ -151,6 +151,24 @@ ul.secondary li {
 	line-height: 25px;
 	text-align: justify;
 }
+.portraits.index .info {
+	font-size: 0.9em;
+}
+.prints.info {
+	margin-bottom: 20px;
+}
+.print_desc {
+	margin-left: 60px;
+	float: left;
+	width: 150px;
+}
+.print_price {
+	float: left;
+}
+.pricing.info {
+	margin-left: 60px;
+	margin-bottom: 0;
+}
 /* real estate */
 .real_estate {
 	width: 800px;
@@ -190,10 +208,10 @@ ul.secondary li {
 	width: 250px;
 }
 /* contact */
-.contact {
+.contact_container {
 	width: 400px;
 	margin: auto;
-	margin-top: 10px;
+	margin-top: 20px;
 	background-image:url('/images/opaque_bg.png');
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -201,6 +219,24 @@ ul.secondary li {
 	padding: 15px;
 	line-height: 25px;
 	font-size: 0.9em;
+}
+.contact .left_box {
+	background-image:url('/images/opaque_bg_dk.png');
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 15px;
+}
+.contact .left_box .info {
+	line-height: 16px;
+}
+.contact .address {
+	line-height: 14px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.contact .left_box a {
+	border-bottom: 1px dotted #666666;
 }
 .contact .notice {
 	font-style: italic;

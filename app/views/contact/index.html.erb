@@ -1,14 +1,28 @@
 <div class="contact">
-	<p class="notice"><%= flash[:notice] %></p>
-	<p class="contact_type">Email Me: <%= mail_to "shannon@shannonmrush.com", "shannon@shannonmrush.com"%></p>
-	<p class="contact_type">Call Me: &nbsp;&nbsp;(720) 255-1499</p>
-	<p class="contact_type">Or Send Me A Message Right Here:</p>
-	<div class="contact_form">
-		<% form_tag('contact/contact_form') do %>
-		<p>Name:<br/><%= text_field_tag :name, nil, :size => 30 %></p>
-		<p>Email:<br/><%= text_field_tag :email, nil, :size => 30  %></p>
-		<p>Message:<br/><%= text_area_tag :message, nil, :rows => 7, :cols => 40 %></p>
-		<%= submit_tag "Send Message"%>
-		<% end %>
+	<div class="left_box">
+		<p class="info">My Boulder studio location is open by appointment and is located at:</p>
+		<p class="address">4593 N. Broadway St.<br/>
+			Boulder, CO 80304<br/>
+			(<%= link_to "Google Map", "http://maps.google.com/maps?q=4593+Broadway,+boulder&oe=utf-8&client=firefox-a&ie=UTF8&hl=en&hq=&hnear=4593+N+Broadway+St,+Boulder,+Colorado+80304&ll=40.059746,-105.282154&spn=0.007949,0.01929&t=h&z=16&iwloc=A"%>)
+		</p>
+		<p class="info">Enter through the door marked 'Alive Studios'. The studio will be the third door on your right.</p>
+		<p class="info"><%= mail_to "shannon@shannonmrush.com", "Contact me"%> to schedule your studio photo session!</p>
 	</div>
+	<div class="right_box">
+		<div class="contact_container">
+			<p class="notice"><%= flash[:notice] %></p>
+			<p class="contact_type">Email Me: <%= mail_to "shannon@shannonmrush.com", "shannon@shannonmrush.com"%></p>
+			<p class="contact_type">Call Me: &nbsp;&nbsp;(720) 255-1499</p>
+			<p class="contact_type">Or Send Me A Message Right Here:</p>
+			<div class="contact_form">
+				<% form_tag('contact/contact_form') do %>
+				<p>Your Name:<br/><%= text_field_tag :name, nil, :size => 30 %></p>
+				<p>Your Email:<br/><%= text_field_tag :email, nil, :size => 30  %></p>
+				<p>Your Message:<br/><%= text_area_tag :message, nil, :rows => 7, :cols => 40 %></p>
+				<%= submit_tag "Send Message"%>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
 </div>
