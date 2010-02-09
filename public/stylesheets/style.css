@@ -25,7 +25,7 @@ a {
 	display:none;
 }
 .main_logo {
-	position: absolute; top: 68px; right: 252px;
+	position: relative;
 }
 .main_logo img {
 	border: none;
