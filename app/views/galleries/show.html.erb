@@ -23,7 +23,7 @@ $(document).ready(function() {
 		<% end %>
 	</div>
 	<div class="right_box">
-		<div class="photo_container" style="width: <%= @photo.width %>px;" id="photo_container"><%= image_tag(@photo.public_filename, :id => "photo", :class => "photo", :style => "display:none;", :alt => "", :size => "#{@photo.width}x#{@photo.height}")%></div>
+		<div class="photo_container" style="width:<%= @photo.width %>px; border:1px solid red;" id="photo_container"><%= image_tag(@photo.public_filename, :id => "photo", :class => "photo", :style => "display:none;", :alt => "", :size => "#{@photo.width}x#{@photo.height}")%></div>
 		<div class="photo_controls">
 			<p class="previous"><%= link_to "<< Previous", {:action => "show", :shoot_id => @shoot.id, :photo_id => Photo.get_previous(@photo)}%></p>
 			<p class="number">Photo #<%= @photo.number %></p>
