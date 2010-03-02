@@ -9,11 +9,12 @@ class AdminController < ApplicationController
 
   def upload_photos
     number = Shoot.get_number(params[:photo][:shoot_id])
+    count = 0
     params[:uploaded_data].each do |p|    
       photo = Photo.new(params[:photo])
       photo.number = number
       photo.uploaded_data = p
-      if !params[:landscape].blank?
+      if params["orientation_#{count}"] == "landscape"
         photo.width = 375
         photo.height = 250
       else
@@ -21,6 +22,7 @@ class AdminController < ApplicationController
         photo.height = 375
       end
       photo.save
+      count += 1
       number += 1
     end
       redirect_to :action => :index, :shoot_id => params[:photo][:shoot_id]

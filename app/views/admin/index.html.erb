@@ -7,8 +7,10 @@
 		<% form_for(:photo, :url => {:controller => "admin", :action => "upload_photos"}, 
 		                      :html => { :multipart => true }) do |f| -%>
 			<%= f.select :shoot_id, Shoot.all.collect{|s| [ "#{s.gallery.name} - #{s.name}", s.id ] }, {:prompt => 'Select Shoot'}%><br/>
+			<% count = 0 %>
 			<% 10.times do %>
-				Select Photo: <%= file_field_tag "uploaded_data[]" %> Landscape? <%= check_box_tag "landscape"%><br/>
+				Select Photo: <%= file_field_tag "uploaded_data[]" %> Landscape <%= radio_button_tag "orientation_#{count}","landscape", true%> Portrait <%= radio_button_tag "orientation_#{count}","portrait",false%><br/>
+			<% count += 1 %>
 			<% end %>
 		    <%= submit_tag 'Add Photos' %>
 		<% end -%>
