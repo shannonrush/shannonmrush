@@ -8,7 +8,7 @@
 		                      :html => { :multipart => true }) do |f| -%>
 			<%= f.select :shoot_id, Shoot.all.collect{|s| [ "#{s.gallery.name} - #{s.name}", s.id ] }, {:prompt => 'Select Shoot'}%><br/>
 			<% 10.times do %>
-				Select Photo: <%= file_field_tag "uploaded_data[]" %><br/>
+				Select Photo: <%= file_field_tag "uploaded_data[]" %> Landscape? <%= check_box_tag "landscape"%><br/>
 			<% end %>
 		    <%= submit_tag 'Add Photos' %>
 		<% end -%>
