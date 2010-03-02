@@ -13,7 +13,7 @@ class AdminController < ApplicationController
       photo = Photo.new(params[:photo])
       photo.number = number
       photo.uploaded_data = p
-      if params[:landscape] == "1"
+      if !params[:landscape].blank?
         photo.width = 375
         photo.height = 250
       else
